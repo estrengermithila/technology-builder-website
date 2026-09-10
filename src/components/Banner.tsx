@@ -32,6 +32,7 @@ const Banner = () => {
  </div>
           </div>
    <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+<img src={banner} alt="Development Stack" className="w-[260px] sm:w-[310px] md:w-[330px] lg:w-[360px] h-auto object-contain" />
 
           </div>
 
