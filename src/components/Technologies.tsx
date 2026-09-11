@@ -18,6 +18,7 @@ const Technologies = ({ useTechnologyPromise }: TechnologiesProps) => {
 const handleStackTechnology = (technology:technologyType)=>{
 const newStack = [...selectedTechnologies,technology]
 setSelectedTechnologies(newStack)
+
 toast.success('Add To Stack Successfully', {
 position: "top-center",
 autoClose: 5000,
@@ -40,9 +41,10 @@ theme: "light",
   const handleRemoveAll = () => {
 
     setSelectedTechnologies([]);
+    toast.success('SuccessFully all items are deleted')
 
   };
-
+ 
     return (
      <div className="md:flex">
            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
